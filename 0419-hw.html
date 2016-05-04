@@ -1,0 +1,37 @@
+<script type="text/javascript">
+
+// for loop
+for (var hw = 1; hw <= 100; hw++) {
+	if ((hw % 3 == 0) && (hw % 5 == 0)) {
+		console.log("FizzBuzz");
+	}
+	else if (hw % 3 == 0) {
+		console.log("Fizz");
+	}
+	else if (hw % 5 == 0) {
+		console.log("Buzz");
+	}
+	else {
+		console.log(hw);
+	}
+}
+
+// while loop
+var hw2 = 1;
+while (hw2 <= 100) {
+	if ( (!(hw2 % 3)) && (!(hw2 % 5)) ) {
+		console.log("FizzBuzz");
+	}
+	else if (!(hw2 % 3)) {
+		console.log("Fizz");	
+	}
+	else if (!(hw2 % 5)) {
+		console.log("Buzz");
+	}
+	else {
+		console.log(hw2);
+	}
+	hw2++;
+}
+
+</script>

@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	// part 1
+	var nonfiction = {
+		title: "Dry Clean Only",
+		body: [
+			"Written by Tiffany Yu", 
+			"Published in 2016", 
+			"The end"
+			]
+	};
+
+	// part 2
+	var fiction = {
+		title: "Machine Washable Suits",
+		body: [
+			"Written by Mentor", 
+			"The unpublished version", 
+			"To be continued"
+			]
+	};
+
+	function book (x) {
+		console.log("Title: " + x.title);
+		for (var i = 0; i < x.body.length; i++) {
+			console.log("Page " + (i+1) + ": " + x.body[i])
+		}
+	};
+
+	book(fiction);
+	book(nonfiction);
+
+
+</script>
