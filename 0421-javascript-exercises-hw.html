@@ -1,0 +1,92 @@
+<script type="text/javascript">
+	
+	// Returns the area of a circle
+	function area (radius) {
+		var output = (Math.PI * Math.pow (radius,2));
+		console.log (output);
+	}
+	area (4);
+	area (5);
+
+	// Returns the last character in the string
+	function lastletter (string) {
+		console.log (string.charAt( string.length - 1 ));
+	}
+
+	lastletter ("cattywampus");
+	lastletter ("carrot");
+
+	// Prints stars
+	function stars (length) {
+		var star = "";
+		for (var i = 0; i < length; i++) {
+			star = star + "*";
+		}
+		return star;
+	}
+
+	console.log (stars (3));
+	console.log (stars (5));
+
+	// Prints a square of stars
+
+	function starsquare (length) {
+		var starnumber = "";
+		var starlines = "";
+		for (var i = 0; i < length; i++) {
+			starnumber += "*";			
+			}
+		for (var i = 0; i < length; i++) {
+		 	starlines += starnumber + "\n";	
+		 }
+		console.log (starlines);
+	}
+
+	starsquare (3);
+	starsquare (5);
+
+	// Returns the average of an array of integers
+
+	var array1 = [1, 2, 3];
+	var array2 = [1, 2, 4];
+
+	function averageNumbers (numbers) {
+		var sum = 0;
+		for (var i = 0; i < numbers.length; i++) {
+			sum += numbers[i];
+		}
+		var avg = sum/numbers.length;
+		console.log(avg);
+	}
+
+	averageNumbers(array1);
+	averageNumbers(array2);
+
+	// optional challenge
+
+	var array1 = [5, 10, 2];
+	var array2 = [3, 5, 7];
+	var array3 = [8, 7, 6];
+	var array4 = [1, 2, 8, 200];
+
+	function commonNumber (number1, number2) {
+		var common = "";
+		for (var i =0; i < number1.length; i++) {
+			for (var j=0; j < number2.length; j++) {
+				if (number1[i] == number2[j]) {
+					if (number1[i]>common) {
+						common = number1[i];
+					}
+				} 		
+			}
+		}
+		if (common == "") {
+			common = "undefined";
+		}
+		console.log (common);
+	}
+
+	commonNumber(array1, array2);
+	commonNumber(array3, array4);
+
+</script>

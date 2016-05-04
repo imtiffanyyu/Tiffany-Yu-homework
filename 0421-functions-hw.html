@@ -1,0 +1,24 @@
+<script type="text/javascript">
+	
+	// Part 1
+	var findSum = function (a ,b) {
+		return a + b;
+	}
+
+	var findProduct = function (a, b) {
+		return a * b;
+	}
+
+	// Part 2
+	var threeOperation = function (x, operation) {
+		var z = operation (3, x);
+		console.log (z);
+	}
+
+	// Part 3
+	threeOperation (4, findSum);
+	threeOperation (5, findSum);
+	threeOperation (4, findProduct);
+	threeOperation (5, findProduct);
+
+</script>
